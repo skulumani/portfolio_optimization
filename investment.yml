@@ -5,7 +5,11 @@ dependencies:
 - python>=3.4
 - pip
 - ipython
+- pandas
+- PyYAML
+- PyQt5
 - pip:
     - PyPortfolioOpt
     - fix_yahoo_finance
+    - pandas-datareader
 

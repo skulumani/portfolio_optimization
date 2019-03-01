@@ -15,4 +15,8 @@ Create environment
 conda env create -f investment.yml
 ~~~
 
+~~~
+conda env update -f investment.yml
+~~~
 
+Download historical stock prices
