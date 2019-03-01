@@ -20,3 +20,14 @@ conda env update -f investment.yml
 ~~~
 
 Download historical stock prices
+
+~~~
+python download_prices.py
+~~~
+
+Try an example optimization
+
+~~~
+run portfolio.py
+~~~
+
