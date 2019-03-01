@@ -5,7 +5,7 @@ from pypfopt import expected_returns
 from pypfopt import discrete_allocation
 
 # Read in price data
-df = pd.read_csv("stock_prices.csv", parse_dates=True, index_col="date")
+df = pd.read_hdf("stock_prices.csv", "df")
 
 # Calculate expected returns and sample covariance
 mu = expected_returns.mean_historical_return(df)
