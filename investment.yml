@@ -1,0 +1,10 @@
+name: investment
+channels:
+- defaults
+dependencies:
+- python>=3.4
+- pip
+- ipython
+- pip:
+    - PyPortfolioOpt
+
