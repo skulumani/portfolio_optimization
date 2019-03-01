@@ -5,7 +5,7 @@ from pypfopt import expected_returns
 from pypfopt import discrete_allocation
 
 # Read in price data
-df = pd.read_hdf("stock_prices.csv", "df")
+df = pd.read_hdf("stock_prices.hdf5", "df")
 
 # Calculate expected returns and sample covariance
 mu = expected_returns.mean_historical_return(df)
@@ -20,7 +20,7 @@ ef.portfolio_performance(verbose=True)
 
 latest_prices = discrete_allocation.get_latest_prices(df)
 allocation, leftover = discrete_allocation.portfolio(
-    weights, latest_prices, total_portfolio_value=10000
+    cleaned_weights, latest_prices, total_portfolio_value=10000
 )
 print(allocation)
 print("Funds remaining: ${:.2f}".format(leftover))

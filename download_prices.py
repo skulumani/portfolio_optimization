@@ -36,6 +36,9 @@ def get_all_stocks(ticker_list=['VTSAX', 'VIIIX'], start_date='2000-01-01', end_
 
     return 0
 
+def update_all_stocks(ticker_list):
+    pass
+
 if __name__ == "__main__":
     # get list of stocks/funds
     with open('./stock_list.yml') as stocks:
