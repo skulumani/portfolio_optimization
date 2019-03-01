@@ -7,4 +7,5 @@ dependencies:
 - ipython
 - pip:
     - PyPortfolioOpt
+    - fix_yahoo_finance
 
