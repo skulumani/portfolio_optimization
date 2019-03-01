@@ -9,6 +9,10 @@ dependencies:
 - PyYAML
 - pyqt>5
 - pytables>=3.2
+- matplotlib
+- scipy
+- numpy
+- jupyter
 - pip:
     - PyPortfolioOpt
     - fix_yahoo_finance
